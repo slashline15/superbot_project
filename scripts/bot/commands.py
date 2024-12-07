@@ -1,7 +1,8 @@
+import os
 from telegram import Update
 from .database import connect_to_db
 
-# Comando /start
+# Comando1 /start - Registrar usuário
 async def start(update: Update, context):
     user = update.effective_user
     conn = connect_to_db()
@@ -21,7 +22,23 @@ async def start(update: Update, context):
 
     await update.message.reply_text(f"Olá, {user.first_name}! Você foi registrado no sistema.")
 
-# Comando /notas
+# Responder mensagens e registrar no banco
+async def echo(update: Update, context):
+    text = update.message.text
+    user_id = update.effective_user.id
+    conn = connect_to_db()
+    cursor = conn.cursor()
+
+    cursor.execute("""
+    INSERT INTO message (user_id, message, type)
+    VALUES (?, ?, ?)
+    """, (user_id, text, 'texto'))
+    conn.commit()
+    conn.close()
+
+    await update.message.reply_text(f"Você disse: {text}")
+
+# Comando /notas - Listar notas fiscais
 async def listar_notas(update: Update, context):
     conn = connect_to_db()
     cursor = conn.cursor()
@@ -32,14 +49,17 @@ async def listar_notas(update: Update, context):
     """)
     notas = cursor.fetchall()
 
-    resposta = "📑 *Notas Fiscais Registradas:*\n\n" if notas else "❌ Nenhuma nota fiscal registrada no momento."
-    for nota in notas:
-        resposta += (
-            f"📌 *Número:* {nota[0]}\n"
-            f"💰 *Valor:* R${nota[1]:,.2f}\n"
-            f"📅 *Data:* {nota[2]}\n"
-            f"📝 *Descrição:* {nota[3]}\n\n"
-        )
+    if notas:
+        resposta = "📑 *Notas Fiscais Registradas:*\n\n"
+        for nota in notas:
+            resposta += (
+                f"📌 *Número:* {nota[0]}\n"
+                f"💰 *Valor:* R${nota[1]:,.2f}\n"
+                f"📅 *Data:* {nota[2]}\n"
+                f"📝 *Descrição:* {nota[3]}\n\n"
+            )
+    else:
+        resposta = "❌ Nenhuma nota fiscal registrada no momento."
 
     conn.close()
     await update.message.reply_text(resposta, parse_mode="Markdown")
