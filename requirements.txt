@@ -3,3 +3,4 @@ python-telegram-bot
 n8n
 python-dotenvn
 notion-client
+python-telegram-bot==20.3
