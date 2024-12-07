@@ -1,3 +1,5 @@
 requests
 python-telegram-bot
 n8n
+python-dotenvn
+notion-client
