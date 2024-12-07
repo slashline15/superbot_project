@@ -1,0 +1,6 @@
+# Ignorar arquivos sensíveis
+.env
+.env2
+
+# Ignorar o banco de dados
+superbot.db

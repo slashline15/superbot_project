@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: n8n
+Version: 0.11.0
+Home-page: https://github.com/victorpantoja/n8n-client-python
+Author: Victor Pantoja
+Author-email: victor.pantoja@gmail.com
+License: GPLv3
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+License-File: LICENSE
+Requires-Dist: requests
+
+# n8n-client-python
+A Python client that interacts with n8n backend
