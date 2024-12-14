@@ -4,3 +4,9 @@
 
 # Ignorar o banco de dados
 superbot.db
+.env
+.venv/
+*.db
+__pycache__/
+*.pyc
+.

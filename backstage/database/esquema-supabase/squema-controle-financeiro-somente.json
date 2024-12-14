@@ -1,0 +1,512 @@
+[
+  {
+    "table_schema": "public",
+    "table_name": "ajustes",
+    "column_name": "id_ajuste",
+    "data_type": "integer"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "ajustes",
+    "column_name": "id_insumo",
+    "data_type": "integer"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "ajustes",
+    "column_name": "descricao",
+    "data_type": "text"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "ajustes",
+    "column_name": "valor",
+    "data_type": "numeric"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "ajustes",
+    "column_name": "data_ajuste",
+    "data_type": "date"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "feedback_erros",
+    "column_name": "id",
+    "data_type": "integer"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "feedback_erros",
+    "column_name": "item_descricao",
+    "data_type": "text"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "feedback_erros",
+    "column_name": "tipo_erro",
+    "data_type": "text"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "feedback_erros",
+    "column_name": "valor_incorreto",
+    "data_type": "numeric"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "feedback_erros",
+    "column_name": "valor_correto",
+    "data_type": "numeric"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "feedback_erros",
+    "column_name": "data_registro",
+    "data_type": "timestamp without time zone"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "feedback_erros",
+    "column_name": "usuario_responsavel",
+    "data_type": "text"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "files",
+    "column_name": "id_file",
+    "data_type": "integer"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "files",
+    "column_name": "type",
+    "data_type": "text"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "files",
+    "column_name": "url",
+    "data_type": "text"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "fornecedores_prestadores",
+    "column_name": "id",
+    "data_type": "integer"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "fornecedores_prestadores",
+    "column_name": "nome",
+    "data_type": "text"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "fornecedores_prestadores",
+    "column_name": "cnpj",
+    "data_type": "text"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "fornecedores_prestadores",
+    "column_name": "contato",
+    "data_type": "text"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "itens_meta",
+    "column_name": "id_item_meta",
+    "data_type": "integer"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "itens_meta",
+    "column_name": "meta_id",
+    "data_type": "integer"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "itens_meta",
+    "column_name": "descricao",
+    "data_type": "text"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "itens_meta",
+    "column_name": "qtd",
+    "data_type": "numeric"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "itens_meta",
+    "column_name": "unitario",
+    "data_type": "numeric"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "itens_meta",
+    "column_name": "valor_s",
+    "data_type": "numeric"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "medicoes",
+    "column_name": "id_medicao",
+    "data_type": "integer"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "medicoes",
+    "column_name": "id_prestador",
+    "data_type": "integer"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "medicoes",
+    "column_name": "id_obra",
+    "data_type": "integer"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "medicoes",
+    "column_name": "descricao",
+    "data_type": "text"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "medicoes",
+    "column_name": "valor",
+    "data_type": "numeric"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "medicoes",
+    "column_name": "data",
+    "data_type": "timestamp with time zone"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "messages",
+    "column_name": "id_message",
+    "data_type": "integer"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "messages",
+    "column_name": "user_id",
+    "data_type": "integer"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "messages",
+    "column_name": "message",
+    "data_type": "text"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "messages",
+    "column_name": "timestamp",
+    "data_type": "timestamp with time zone"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "messages",
+    "column_name": "type",
+    "data_type": "text"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "messages",
+    "column_name": "file_id",
+    "data_type": "integer"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "meta",
+    "column_name": "id_meta",
+    "data_type": "integer"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "meta",
+    "column_name": "obra_id",
+    "data_type": "integer"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "meta",
+    "column_name": "insumo_id",
+    "data_type": "integer"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "meta",
+    "column_name": "descricao",
+    "data_type": "text"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "meta",
+    "column_name": "qtd",
+    "data_type": "numeric"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "meta",
+    "column_name": "unitario",
+    "data_type": "numeric"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "n8n_chat_histories",
+    "column_name": "id",
+    "data_type": "bigint"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "n8n_chat_histories",
+    "column_name": "n8n_chat_histories",
+    "data_type": "text"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "n8n_chat_histories",
+    "column_name": "created_at",
+    "data_type": "timestamp with time zone"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "notas_fiscais",
+    "column_name": "id_nota",
+    "data_type": "integer"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "notas_fiscais",
+    "column_name": "obra_id",
+    "data_type": "integer"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "notas_fiscais",
+    "column_name": "pedido_compra_id",
+    "data_type": "integer"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "notas_fiscais",
+    "column_name": "fornecedor_id",
+    "data_type": "integer"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "notas_fiscais",
+    "column_name": "tipo",
+    "data_type": "text"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "notas_fiscais",
+    "column_name": "numero",
+    "data_type": "text"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "notas_fiscais",
+    "column_name": "valor",
+    "data_type": "numeric"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "notas_fiscais",
+    "column_name": "data_emissao",
+    "data_type": "date"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "notas_fiscais",
+    "column_name": "data_vencimento",
+    "data_type": "date"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "notas_fiscais",
+    "column_name": "descricao",
+    "data_type": "text"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "notas_fiscais",
+    "column_name": "file_id",
+    "data_type": "integer"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "obras",
+    "column_name": "id_obra",
+    "data_type": "integer"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "obras",
+    "column_name": "nome",
+    "data_type": "text"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "obras",
+    "column_name": "responsavel_id",
+    "data_type": "integer"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "pedidos_de_compra",
+    "column_name": "id_pedido",
+    "data_type": "integer"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "pedidos_de_compra",
+    "column_name": "obra_id",
+    "data_type": "integer"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "pedidos_de_compra",
+    "column_name": "insumo_id",
+    "data_type": "integer"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "pedidos_de_compra",
+    "column_name": "data_emissao",
+    "data_type": "date"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "pedidos_de_compra",
+    "column_name": "valor",
+    "data_type": "numeric"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "pedidos_de_compra",
+    "column_name": "descricao",
+    "data_type": "text"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "pedidos_de_compra",
+    "column_name": "fornecedor_id",
+    "data_type": "integer"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "pedidos_de_compra",
+    "column_name": "file_id",
+    "data_type": "integer"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "pedidos_filhotes",
+    "column_name": "id_pedido_filho",
+    "data_type": "integer"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "pedidos_filhotes",
+    "column_name": "pedido_pai_id",
+    "data_type": "integer"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "pedidos_filhotes",
+    "column_name": "obra_id",
+    "data_type": "integer"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "pedidos_filhotes",
+    "column_name": "descricao",
+    "data_type": "text"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "pedidos_filhotes",
+    "column_name": "valor",
+    "data_type": "numeric"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "pedidos_filhotes",
+    "column_name": "data_criacao",
+    "data_type": "timestamp with time zone"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "tabela_insumos",
+    "column_name": "id_insumo",
+    "data_type": "integer"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "tabela_insumos",
+    "column_name": "obra_id",
+    "data_type": "integer"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "tabela_insumos",
+    "column_name": "cod_insumo",
+    "data_type": "text"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "tabela_insumos",
+    "column_name": "descricao",
+    "data_type": "text"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "tabela_insumos",
+    "column_name": "categoria",
+    "data_type": "text"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "users",
+    "column_name": "id_user",
+    "data_type": "integer"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "users",
+    "column_name": "username",
+    "data_type": "text"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "users",
+    "column_name": "first_name",
+    "data_type": "text"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "users",
+    "column_name": "last_name",
+    "data_type": "text"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "users",
+    "column_name": "created",
+    "data_type": "timestamp with time zone"
+  },
+  {
+    "table_schema": "public",
+    "table_name": "users",
+    "column_name": "last_message_id",
+    "data_type": "integer"
+  }
+]
